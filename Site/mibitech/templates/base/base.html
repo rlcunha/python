@@ -1,0 +1,293 @@
+{%load static%}
+
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>MiBiTECH Soluções Tecnologicas</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="{% static 'img/logos/logo-shortcut.png' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.css' %}">
+
+    <!-- Icomoon -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/icomoon.css' %}">
+
+    <!-- Slider -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/swiper.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/rev-settings.css' %}">
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+    <!-- Color Switcher -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/switcher.css' %}">
+
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
+    <link rel="stylesheet" type="text/css" id="colors" href="{% static 'css/styles-4.css' %}">
+
+    <!-- Fonts Google -->
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!-- Preloader Start-->
+    <div id="preloader">
+        <div class="row loader">
+            <div class="loader-icon"></div>
+        </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Navbar START -->
+    <header id="nav-transparent">
+        <nav id="navigation4" class="container navigation">
+            <div class="nav-header">
+                <a class="nav-brand" href="{% url 'index' %}">
+                    <img src="{% static 'img/logos/logo-light.png' %}" alt="logo" class="main-logo" id="light_logo">
+                    <img src="{% static 'img/logos/logo-4.png' %}" alt="logo" class="main-logo" id="main_logo">
+                </a>
+                <div class="nav-toggle"></div>
+            </div>
+            <div class="nav-menus-wrapper">
+                <ul class="nav-menu align-to-right">
+                    <li><a href="{% url 'quemsomos' %}">Quem Somos</a></li>
+                    <li><a href="{% url 'servico' %}">Serviços</a></li>
+                    <li><a href="{% url 'projeto' %}">Projetos</a></li>
+                    <li><a href="{% url 'contato' %}">Blog</a></li>
+                    <!--       <li><a href="#">Shop</a>
+          <ul class="nav-dropdown">
+            <li><a href="shop-grid.html">Grid Style 3 Col</a></li>
+            <li><a href="shop-grid-4-col.html">Grid Style 4 Col</a></li>
+            <li><a href="shop-grid-classic.html">Classic Style 3 Col</a></li>
+            <li><a href="shop-grid-classic-4-col.html">Classic Style 4 Col</a></li>
+            <li><a href="shop-single.html">Shop Single</a></li>
+            <li><a href="shopping-cart.html">Shopping Cart</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Pages</a>
+          <ul class="nav-dropdown">
+            <li><a href="faq.html">FAQ 01</a></li>
+            <li><a href="faq-2.html">FAQ 02</a></li>
+            <li><a href="404.html">Error 404</a></li>
+            <li><a href="under-construction.html">Under Construction</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Elements</a>
+          <ul class="nav-dropdown">
+            <li><a href="feature-boxes.html">Feature Boxes</a></li>
+            <li><a href="pricing-lists.html">Pricing Lists</a></li>
+            <li><a href="testmonials.html">Testmonials</a></li>
+            <li><a href="progress-bars.html">Progress Bars</a></li>
+            <li><a href="accordions.html">Accordions</a></li>
+            <li><a href="animated-tabs.html">Animated Tabs</a></li>
+            <li><a href="countups.html">Countups</a></li>
+            <li><a href="responsive-videos.html">Responsive Videos</a></li>
+          </ul>
+        </li> -->
+                    <li><a href="{% url 'contato' %}">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Navbar END -->
+
+    {% block conteudo %}
+    {% endblock %}
+
+    <!-- Footer START -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Column 1 Start -->
+                <div class="col-md-4 col-sm-6 col-12">
+                    <h3>About Us</h3>
+                    <div class="mt-25">
+                        <img src="{% static 'img/logos/logo-footer.png' %}" alt="footer-logo">
+                        <p class="mt-25">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim
+                            ad minim veniam.</p>
+                        <div class="footer-social-icons mt-25">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Column 1 End -->
+
+                <!-- Column 2 Start -->
+                <div class="col-md-3 col-sm-6 col-12">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-list">
+                        <li><a href="#">Strategic Consulting</a></li>
+                        <li><a href="#">Sales Services</a></li>
+                        <li><a href="#">Market Research</a></li>
+                        <li><a href="#">Online Reputation</a></li>
+                        <li><a href="#">Strategic Consulting</a></li>
+                        <li><a href="#">Sales Services</a></li>
+                        <li><a href="#">Market Research</a></li>
+                    </ul>
+                </div>
+                <!-- Column 2 End -->
+
+                <!-- Column 3 Start -->
+                <div class="col-md-3 col-sm-6 col-12">
+                    <h3>Recent Posts</h3>
+                    <div class="mt-25">
+                        <!-- Post Start -->
+                        <div class="footer-recent-post clearfix">
+                            <div class="footer-recent-post-thumb">
+                                <img src="http://via.placeholder.com/65x65" alt="img">
+                            </div>
+                            <div class="footer-recent-post-content">
+                                <span>February 7, 2018</span>
+                                <a href="#">Advices for young designers</a>
+                            </div>
+                        </div>
+                        <!-- Post End -->
+                        <!-- Post Start -->
+                        <div class="footer-recent-post clearfix">
+                            <div class="footer-recent-post-thumb">
+                                <img src="http://via.placeholder.com/65x65" alt="img">
+                            </div>
+                            <div class="footer-recent-post-content">
+                                <span>February 7, 2018</span>
+                                <a href="#">What Planning Process Needs?</a>
+                            </div>
+                        </div>
+                        <!-- Post End -->
+                        <!-- Post Start -->
+                        <div class="footer-recent-post clearfix">
+                            <div class="footer-recent-post-thumb">
+                                <img src="http://via.placeholder.com/65x65" alt="img">
+                            </div>
+                            <div class="footer-recent-post-content">
+                                <span>February 7, 2018</span>
+                                <a href="#">Lorem ipsum dolor sit amet.</a>
+                            </div>
+                        </div>
+                        <!-- Post End -->
+                    </div>
+                </div>
+                <!-- Column 3 End -->
+
+                <!-- Column 4 Start -->
+                <div class="col-md-2 col-sm-6 col-12">
+                    <h3>Tags</h3>
+                    <div class="footer-tags mt-25">
+                        <a href="#">Business</a>
+                        <a href="#">Conusltant</a>
+                        <a href="#">Coach</a>
+                        <a href="#">UX</a>
+                        <a href="#">API</a>
+                        <a href="#">Reputation</a>
+                        <a href="#">Research</a>
+                        <a href="#">Sale</a>
+                        <a href="#">Service</a>
+                        <a href="#">UI</a>
+                        <a href="#">Web</a>
+                        <a href="#">WebDesign</a>
+                    </div>
+                </div>
+                <!-- Column 4 End -->
+            </div>
+
+            <!-- Footer Bar Start -->
+            <div class="footer-bar">
+                <p><span class="primary-color">SpecThemes</span> © 2018. All Rights Reserved.</p>
+            </div>
+            <!-- Footer Bar End -->
+        </div>
+    </footer>
+    <!-- Footer END -->
+
+
+
+
+    <!-- Scroll to top button Start -->
+    <a href="#" class="scroll-to-top"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+    <!-- Scroll to top button End -->
+
+
+    <!-- Jquery -->
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+
+    <!--Popper JS-->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+
+    <!-- Bootstrap JS-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <!-- Owl Carousel-->
+    <script src="{% static 'js/owl.carousel.js' %}"></script>
+
+    <!-- Navbar JS -->
+    <script src="{% static 'js/navigation.js' %}"></script>
+    <script src="{% static 'js/navigation.fixed.js' %}"></script>
+
+    <!-- Wow JS -->
+    <script src="{% static 'js/wow.min.js' %}"></script>
+
+    <!-- Countup -->
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+
+    <!-- Tabs -->
+    <script src="{% static 'js/tabs.min.js' %}"></script>
+
+    <!-- Yotube Video Player -->
+    <script src="{% static 'js/jquery.mb.YTPlayer.min.js' %}"></script>
+
+    <!-- Swiper Slider -->
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+
+    <!-- Isotop -->
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+
+    <!-- Modernizr -->
+    <script src="{% static 'js/modernizr.js' %}"></script>
+
+    <!-- Switcher JS -->
+    <script src="{% static 'js/switcher.js' %}"></script>
+
+    <!-- Google Map -->
+    <script src="{% static 'js/map.js' %}"></script>
+
+    <!-- Chart JS -->
+    <script src="{% static 'js/Chart.bundle.js' %}"></script>
+    <script src="{% static 'js/utils.js' %}"></script>
+
+    <!-- Revolution Slider -->
+    <script src="{% static 'js/revolution/jquery.themepunch.tools.min.js' %}"></script>
+    <script src="{% static 'js/revolution/jquery.themepunch.revolution.min.js' %}"></script>
+    <script src="{% static 'js/revolution/revolution.extension.actions.min.js' %}"></script>
+    <script src="{% static 'js/revolution/revolution.extension.carousel.min.js' %}"></script>
+    <script src="{% static 'js/revolution/revolution.extension.kenburn.min.js' %}"></script>
+    <script src="{% static 'js/revolution/revolution.extension.layeranimation.min.js' %}"></script>
+    <script src="{% static 'js/revolution/revolution.extension.migration-2.min.js' %}"></script>
+    <script src="{% static 'js/revolution/revolution.extension.parallax.min.js' %}"></script>
+    <script src="{% static 'js/revolution/revolution.extension.navigation.min.js' %}"></script>
+    <script src="{% static 'js/revolution/revolution.extension.slideanims.min.js' %}"></script>
+    <script src="{% static 'js/revolution/revolution.extension.video.min.js' %}"></script>
+
+    <!-- Main JS -->
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+
+</html>

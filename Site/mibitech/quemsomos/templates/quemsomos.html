@@ -1,0 +1,132 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block conteudo %}
+<!-- Page Title START -->
+<div class="page-title-section" style='background-image: url("/static/img/Quemsomos.jpg");'>
+    <div class="container">
+        <h1>Quem Somos</h1>
+        <ul>
+            <li><a href="{% url 'index' %}">Home</a></li>
+        </ul>
+    </div>
+</div>
+<!-- Page Title END -->
+
+
+<!-- Info Section START -->
+<div class="section-block">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-12">
+                <div class="pr-30-md">
+                    <div class="section-heading">
+                        <h4>Consultoria digital para todos tipos de negócios.</h4>
+                    </div>
+                    <div class="section-heading-line-left"></div>
+                    <div class="text-content-big mt-20">
+                        <p>A MIBITech oferece soluções tecnologicas customizadas para todos os tamanhos de empresas.
+                            Levaremos sua empresa para outros patamares com serviços inteligentes e, inovadores nos
+                            seguimentos de IoT - Internet das Coisas, BigData - Consolidação de todas informações em
+                            um repostorio(DataLake), Segurança da Informação - Orientações de como manter seus dados
+                            seguros. Nós sabemos analisar necessidades da sua empresa e propor transformações
+                            digitais que tragam resultados siginificativos. Não fique de fora, junte-se à essa
+                            transformação digital..</p>
+                    </div>
+                    <div class="mt-20">
+                        <ul class="primary-list">
+                            <li><i class="fa fa-check-square"></i>Governança e gestão de dados</li>
+                            <li><i class="fa fa-check-square"></i>Automação residencial e Internet das coisas</li>
+                            <li><i class="fa fa-check-square"></i>Automatização de processos - RPA</li>
+                            <li><i class="fa fa-check-square"></i>Gestão de processos</li>
+                            <li><i class="fa fa-check-square"></i>Desenvolvimento de software</li>
+                            <li><i class="fa fa-check-square"></i>Marketing digital focado em resultado</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-12">
+                <img src="http://via.placeholder.com/540x360" class="rounded-border shadow-primary mt-15-xs" alt="img">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Info Section END -->
+
+<!-- Team Members START -->
+<div class="section-block-grey">
+    <div class="container">
+        <div class="section-heading center-holder">
+            <span>Conheça nosso time</span>
+            <h3>Somos uma equipe de profissionais</h3>
+            <div class="section-heading-line"></div>
+            <p>Totalmente comprometida com o resultado de nossos clientes <br>nossa maior recompensa é a satisfação
+                de um serviço bem realizado.</p>
+        </div>
+        <div class="row mt-50">
+            <div class="col-md-4 col-sm-4 col-12">
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <img src="http://via.placeholder.com/350x290" alt="img">
+                    </div>
+                    <div class="team-member-text">
+                        <h4><a href="#">Jack Semper</a></h4>
+                        <span>Majority Owner</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-12">
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <img src="http://via.placeholder.com/350x290" alt="img">
+                    </div>
+                    <div class="team-member-text">
+                        <h4><a href="#">Ann Smith</a></h4>
+                        <span>Finance Lead</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-12">
+                <div class="team-member">
+                    <div class="team-member-img">
+                        <img src="http://via.placeholder.com/350x290" alt="img">
+                    </div>
+                    <div class="team-member-text">
+                        <h4><a href="#">Philip Wilson</a></h4>
+                        <span>Networking Lead</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team Members END -->
+{%endblock%}
